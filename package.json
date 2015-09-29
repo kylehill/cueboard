@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "node _express_for_localhost",
-    "run": "node _express_for_localhost &",
+    "bg": "node _express_for_localhost &",
     "test": "gulp mocha"
   },
   "author": "Kyle Hill <kylehill@gmail.com>",

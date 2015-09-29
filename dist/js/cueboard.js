@@ -14,7 +14,7 @@
   };
 
   var defaultKeyboardDefinition = {
-    rows: [[{ type: "dual", top: "~", bottom: "`" }, { type: "dual", top: "!", bottom: "1" }, { type: "dual", top: "@", bottom: "2" }, { type: "dual", top: "#", bottom: "3" }, { type: "dual", top: "$", bottom: "4" }, { type: "dual", top: "%", bottom: "5" }, { type: "dual", top: "^", bottom: "6" }, { type: "dual", top: "&", bottom: "7" }, { type: "dual", top: "*", bottom: "8" }, { type: "dual", top: "(", bottom: "9" }, { type: "dual", top: ")", bottom: "0" }, { type: "dual", top: "_", bottom: "-" }, { type: "dual", top: "+", bottom: "=" }, { type: "bottom-right", text: "Delete", width: 1.4 }], [{ type: "bottom-left", text: "Tab", width: 1.4 }, { type: "center", text: "Q" }, { type: "center", text: "W" }, { type: "center", text: "E" }, { type: "center", text: "R" }, { type: "center", text: "T" }, { type: "center", text: "Y" }, { type: "center", text: "U" }, { type: "center", text: "I" }, { type: "center", text: "O" }, { type: "center", text: "P" }, { type: "dual", top: "{", bottom: "[" }, { type: "dual", top: "}", bottom: "]" }, { type: "dual", top: "|", bottom: "\\" }], [{ type: "bottom-left", text: "Caps Lock", width: 1.8 }, { type: "center", text: "A" }, { type: "center", text: "S" }, { type: "center", text: "D" }, { type: "center", text: "F" }, { type: "center", text: "G" }, { type: "center", text: "H" }, { type: "center", text: "J" }, { type: "center", text: "K" }, { type: "center", text: "L" }, { type: "dual", top: ":", bottom: ";" }, { type: "dual", top: "\"", bottom: "'" }, { type: "bottom-right", text: "Return", width: 1.8 }], [{ type: "bottom-left", name: "Left-Shift", text: "Shift", width: 2.4 }, { type: "center", text: "Z" }, { type: "center", text: "X" }, { type: "center", text: "C" }, { type: "center", text: "V" }, { type: "center", text: "B" }, { type: "center", text: "N" }, { type: "center", text: "M" }, { type: "dual", top: "<", bottom: "," }, { type: "dual", top: ">", bottom: "." }, { type: "dual", top: "?", bottom: "/" }, { type: "bottom-right", name: "Right-Shift", text: "Shift", width: 2.4 }], [{ type: "blank" }, { type: "blank" }, { type: "blank" }, { type: "blank" }, { type: "space", width: 6.2 }, { type: "blank" }, { type: "blank" }, { type: "blank" }, { type: "blank" }, { type: "blank" }]]
+    rows: [[{ type: "dual", top: "~", bottom: "`", aliases: [192] }, { type: "dual", top: "!", bottom: "1", aliases: [49] }, { type: "dual", top: "@", bottom: "2", aliases: [50] }, { type: "dual", top: "#", bottom: "3", aliases: [51] }, { type: "dual", top: "$", bottom: "4", aliases: [52] }, { type: "dual", top: "%", bottom: "5", aliases: [53] }, { type: "dual", top: "^", bottom: "6", aliases: [54] }, { type: "dual", top: "&", bottom: "7", aliases: [55] }, { type: "dual", top: "*", bottom: "8", aliases: [56] }, { type: "dual", top: "(", bottom: "9", aliases: [57] }, { type: "dual", top: ")", bottom: "0", aliases: [48] }, { type: "dual", top: "_", bottom: "-", aliases: [189] }, { type: "dual", top: "+", bottom: "=", aliases: [187] }, { type: "bottom-right", text: "Delete", width: 1.4, aliases: ["U+0008", "Backspace"] }], [{ type: "bottom-left", text: "Tab", width: 1.4, aliases: ["U+0009"] }, { type: "center", text: "Q", aliases: [81] }, { type: "center", text: "W", aliases: [87] }, { type: "center", text: "E", aliases: [69] }, { type: "center", text: "R", aliases: [82] }, { type: "center", text: "T", aliases: [84] }, { type: "center", text: "Y", aliases: [89] }, { type: "center", text: "U", aliases: [85] }, { type: "center", text: "I", aliases: [73] }, { type: "center", text: "O", aliases: [79] }, { type: "center", text: "P", aliases: [80] }, { type: "dual", top: "{", bottom: "[", aliases: [219] }, { type: "dual", top: "}", bottom: "]", aliases: [221] }, { type: "dual", top: "|", bottom: "\\", aliases: [220] }], [{ type: "bottom-left", text: "Caps Lock", aliases: ["CapsLock"], width: 1.8 }, { type: "center", text: "A", aliases: [65] }, { type: "center", text: "S", aliases: [83] }, { type: "center", text: "D", aliases: [68] }, { type: "center", text: "F", aliases: [70] }, { type: "center", text: "G", aliases: [71] }, { type: "center", text: "H", aliases: [72] }, { type: "center", text: "J", aliases: [74] }, { type: "center", text: "K", aliases: [75] }, { type: "center", text: "L", aliases: [76] }, { type: "dual", top: ":", bottom: ";", aliases: [186] }, { type: "dual", top: "\"", bottom: "'", aliases: [222] }, { type: "bottom-right", text: "Return", aliases: ["Enter"], width: 1.8 }], [{ type: "bottom-left", name: "Left-Shift", aliases: ["Shift"], text: "Shift", width: 2.4 }, { type: "center", text: "Z", aliases: [90] }, { type: "center", text: "X", aliases: [88] }, { type: "center", text: "C", aliases: [67] }, { type: "center", text: "V", aliases: [86] }, { type: "center", text: "B", aliases: [66] }, { type: "center", text: "N", aliases: [78] }, { type: "center", text: "M", aliases: [77] }, { type: "dual", top: "<", bottom: ",", aliases: [188] }, { type: "dual", top: ">", bottom: ".", aliases: [190] }, { type: "dual", top: "?", bottom: "/", aliases: [191] }, { type: "bottom-right", name: "Right-Shift", text: "Shift", width: 2.4 }], [{ type: "blank" }, { type: "blank" }, { type: "blank" }, { type: "blank" }, { type: "space", width: 6.2, aliases: [32] }, { type: "blank" }, { type: "blank" }, { type: "blank" }, { type: "blank" }, { type: "blank" }]]
   };
 
   var buildKeyboard = function buildKeyboard(opts) {
@@ -91,6 +91,12 @@
           $key.attr("data-cueboard-keywidth", key.width);
         }
 
+        if (key.aliases) {
+          key.aliases.forEach(function (alias) {
+            aliases[alias] = keyObject;
+          });
+        }
+
         $key.append($keyText);
         $row.append($key);
       });
@@ -133,32 +139,15 @@
 
     return {
 
-      activate: function activate(optionalKeyOrKeyArray) {
-        if (optionalKeyOrKeyArray.constructor === Array) {
-          return optionalKeyOrKeyArray.forEach(this.activate);
+      changeState: function changeState(state, optionalKeyOrKeyArray) {
+        if (optionalKeyOrKeyArray && optionalKeyOrKeyArray.constructor === Array) {
+          return optionalKeyOrKeyArray.forEach(function (key) {
+            this.changeState(state, key);
+          }, this);
         }
 
-        instance.keys(optionalKeyOrKeyArray).changeState("active");
-        state.active[optionalKeyOrKeyArray] = true;
-      },
-
-      deactivate: function deactivate(optionalKeyOrKeyArray) {
-        if (optionalKeyOrKeyArray.constructor === Array) {
-          return optionalKeyOrKeyArray.forEach(this.deactivate);
-        }
-
-        instance.keys(optionalKeyOrKeyArray).changeState("inactive");
-        state.active[optionalKeyOrKeyArray] = false;
-      },
-
-      next: function next(optionalKey) {
-        if (state.next) {
-          this.activate(state.next);
-        }
-        state.next = false;
-
-        instance.keys(optionalKey).changeState("next");
-        state.next = optionalKey;
+        var key = instance.keys(optionalKeyOrKeyArray);
+        key && key.changeState(state);
       }
 
     };
