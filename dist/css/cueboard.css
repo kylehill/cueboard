@@ -7,11 +7,11 @@
   color: #333333;
   display: inline-block;
   border: solid 3px #333333;
-  width: 3em;
+  width: 48px;
   text-align: center;
-  height: 3em;
+  height: 48px;
   vertical-align: top;
-  margin: 0.3em;
+  margin: 4.8px;
   border-radius: 5px;
   position: relative;
   font-family: sans-serif; }
@@ -22,27 +22,34 @@
 .cueboard-center .cueboard-keytext {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
-  font-size: 1.4em; }
+  font-size: 22.4px; }
 
 .cueboard-bottom-left .cueboard-keytext {
   position: absolute;
   bottom: 5px;
   left: 5px;
-  font-size: 0.8em; }
+  font-size: 12.8px; }
 
 .cueboard-bottom-right .cueboard-keytext {
   position: absolute;
   bottom: 5px;
   right: 5px;
-  font-size: 0.8em; }
+  font-size: 12.8px; }
 
 .cueboard-dual .cueboard-keytext {
   height: 100%; }
 
 .cueboard-key-top, .cueboard-key-bottom {
-  font-size: 1.05em; }
+  font-size: 16.8px;
+  line-height: 20px;
+  height: 50%; }
+
+.cueboard-keystate-inactive {
+  border: solid 3px #aaaaaa;
+  color: #aaaaaa; }
 
 .cueboard-keystate-active {
   background: #6b3fa0;
@@ -55,13 +62,13 @@
   text-shadow: 1px 1px #333333; }
 
 [data-cueboard-keywidth='1.4'] {
-  width: 4.2em; }
+  width: 67.2px; }
 
 [data-cueboard-keywidth='1.8'] {
-  width: 5.4em; }
+  width: 86.4px; }
 
 [data-cueboard-keywidth='2.4'] {
-  width: 7.2em; }
+  width: 115.2px; }
 
 [data-cueboard-keywidth='6.2'] {
-  width: 18.6em; }
+  width: 297.6px; }

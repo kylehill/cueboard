@@ -1,9 +1,10 @@
-$base_character_font_size: 1em;
+$base_character_font_size: 16px;
 $base_key_height: $base_character_font_size * 3;
 $base_key_width: $base_key_height;
 
 $color_space_gray: rgb(51, 51, 51);
-$color_inactive_gray: rgb(204, 204, 204);
+$color_inactive_gray: rgb(170, 170, 170);
+$color_blank_gray: rgb(204, 204, 204);
 $color_white: rgb(250, 250, 250);
 
 .cueboard, .cueboard * {
@@ -27,12 +28,13 @@ $color_white: rgb(250, 250, 250);
 }
 
 .cueboard-blank {
-  border: solid 3px $color_inactive_gray;
+  border: solid 3px $color_blank_gray;
 }
 
 .cueboard-center .cueboard-keytext {
   position: absolute;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
   font-size: $base_character_font_size * 1.4;
@@ -58,6 +60,13 @@ $color_white: rgb(250, 250, 250);
 
 .cueboard-key-top, .cueboard-key-bottom {
   font-size: $base_character_font_size * 1.05;
+  line-height: $base_character_font_size * 1.25;
+  height: 50%;
+}
+
+.cueboard-keystate-inactive {
+  border: solid 3px $color_inactive_gray;
+  color: $color_inactive_gray;
 }
 
 .cueboard-keystate-active {
