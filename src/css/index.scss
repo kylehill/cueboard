@@ -1,0 +1,40 @@
+$color_space_gray: rgb(51, 51, 51);
+$color_inactive_gray: rgb(170, 170, 170);
+$color_white: rgb(250, 250, 250);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+.cueboard-container {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  width: 100%;
+}
+
+.cueboard-keystate-inactive {
+  border: solid 3px $color_inactive_gray;
+  color: $color_inactive_gray;
+}
+
+.cueboard-keystate-active {
+  background: rgb(107, 63, 160);
+  color: $color_white;
+  text-shadow: 1px 1px $color_space_gray;
+}
+
+.cueboard-keystate-next {
+  background: rgb(204, 51, 51);
+  color: $color_white;
+  text-shadow: 1px 1px $color_space_gray;
+}

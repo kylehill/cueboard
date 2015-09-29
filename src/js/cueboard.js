@@ -14,64 +14,64 @@
   const defaultKeyboardDefinition = {
     rows: [ 
       [
-        { type: "dual", top: "~", bottom: "`", aliases: [192] },
-        { type: "dual", top: "!", bottom: "1", aliases: [49] },
-        { type: "dual", top: "@", bottom: "2", aliases: [50] },
-        { type: "dual", top: "#", bottom: "3", aliases: [51] },
-        { type: "dual", top: "$", bottom: "4", aliases: [52] },
-        { type: "dual", top: "%", bottom: "5", aliases: [53] },
-        { type: "dual", top: "^", bottom: "6", aliases: [54] },
-        { type: "dual", top: "&", bottom: "7", aliases: [55] },
-        { type: "dual", top: "*", bottom: "8", aliases: [56] },
-        { type: "dual", top: "(", bottom: "9", aliases: [57] },
-        { type: "dual", top: ")", bottom: "0", aliases: [48] },
-        { type: "dual", top: "_", bottom: "-", aliases: [189] },
-        { type: "dual", top: "+", bottom: "=", aliases: [187] },
-        { type: "bottom-right", text: "Delete", width: 1.4, aliases: ["U+0008", "Backspace"] }
+        { type: "dual", top: "~", bottom: "`", a: [192] },
+        { type: "dual", top: "!", bottom: "1", a: [49] },
+        { type: "dual", top: "@", bottom: "2", a: [50] },
+        { type: "dual", top: "#", bottom: "3", a: [51] },
+        { type: "dual", top: "$", bottom: "4", a: [52] },
+        { type: "dual", top: "%", bottom: "5", a: [53] },
+        { type: "dual", top: "^", bottom: "6", a: [54] },
+        { type: "dual", top: "&", bottom: "7", a: [55] },
+        { type: "dual", top: "*", bottom: "8", a: [56] },
+        { type: "dual", top: "(", bottom: "9", a: [57] },
+        { type: "dual", top: ")", bottom: "0", a: [48] },
+        { type: "dual", top: "_", bottom: "-", a: [189] },
+        { type: "dual", top: "+", bottom: "=", a: [187] },
+        { type: "bottom-right", text: "Delete", width: 1.4, a: ["U+0008", "Backspace"] }
       ],
       [
-        { type: "bottom-left", text: "Tab", width: 1.4, aliases: ["U+0009"] },
-        { type: "center", text: "Q", aliases: [81] },
-        { type: "center", text: "W", aliases: [87] },
-        { type: "center", text: "E", aliases: [69] },
-        { type: "center", text: "R", aliases: [82] },
-        { type: "center", text: "T", aliases: [84] },
-        { type: "center", text: "Y", aliases: [89] },
-        { type: "center", text: "U", aliases: [85] },
-        { type: "center", text: "I", aliases: [73] },
-        { type: "center", text: "O", aliases: [79] },
-        { type: "center", text: "P", aliases: [80] },
-        { type: "dual", top: "{", bottom: "[", aliases: [219] },
-        { type: "dual", top: "}", bottom: "]", aliases: [221] },
-        { type: "dual", top: "|", bottom: "\\", aliases: [220] },
+        { type: "bottom-left", text: "Tab", width: 1.4, a: ["U+0009"] },
+        { type: "center", text: "Q", a: [81] },
+        { type: "center", text: "W", a: [87] },
+        { type: "center", text: "E", a: [69] },
+        { type: "center", text: "R", a: [82] },
+        { type: "center", text: "T", a: [84] },
+        { type: "center", text: "Y", a: [89] },
+        { type: "center", text: "U", a: [85] },
+        { type: "center", text: "I", a: [73] },
+        { type: "center", text: "O", a: [79] },
+        { type: "center", text: "P", a: [80] },
+        { type: "dual", top: "{", bottom: "[", a: [219] },
+        { type: "dual", top: "}", bottom: "]", a: [221] },
+        { type: "dual", top: "|", bottom: "\\", a: [220] },
       ],
       [
-        { type: "bottom-left", text: "Caps Lock", aliases: ["CapsLock"], width: 1.8 },
-        { type: "center", text: "A", aliases: [65] },
-        { type: "center", text: "S", aliases: [83] },
-        { type: "center", text: "D", aliases: [68] },
-        { type: "center", text: "F", aliases: [70] },
-        { type: "center", text: "G", aliases: [71] },
-        { type: "center", text: "H", aliases: [72] },
-        { type: "center", text: "J", aliases: [74] },
-        { type: "center", text: "K", aliases: [75] },
-        { type: "center", text: "L", aliases: [76] },
-        { type: "dual", top: ":", bottom: ";", aliases: [186] },
-        { type: "dual", top: "\"", bottom: "'", aliases: [222] },
-        { type: "bottom-right", text: "Return", aliases: ["Enter"], width: 1.8 },
+        { type: "bottom-left", text: "Caps Lock", a: ["CapsLock"], width: 1.8 },
+        { type: "center", text: "A", a: [65] },
+        { type: "center", text: "S", a: [83] },
+        { type: "center", text: "D", a: [68] },
+        { type: "center", text: "F", a: [70] },
+        { type: "center", text: "G", a: [71] },
+        { type: "center", text: "H", a: [72] },
+        { type: "center", text: "J", a: [74] },
+        { type: "center", text: "K", a: [75] },
+        { type: "center", text: "L", a: [76] },
+        { type: "dual", top: ":", bottom: ";", a: [186] },
+        { type: "dual", top: "\"", bottom: "'", a: [222] },
+        { type: "bottom-right", text: "Return", a: ["Enter"], width: 1.8 },
       ],
       [
-        { type: "bottom-left", name:"Left-Shift", aliases: ["Shift"], text: "Shift", width: 2.4 },
-        { type: "center", text: "Z", aliases: [90] },
-        { type: "center", text: "X", aliases: [88] },
-        { type: "center", text: "C", aliases: [67] },
-        { type: "center", text: "V", aliases: [86] },
-        { type: "center", text: "B", aliases: [66] },
-        { type: "center", text: "N", aliases: [78] },
-        { type: "center", text: "M", aliases: [77] },
-        { type: "dual", top: "<", bottom: ",", aliases: [188] },
-        { type: "dual", top: ">", bottom: ".", aliases: [190] },
-        { type: "dual", top: "?", bottom: "/", aliases: [191] },
+        { type: "bottom-left", name:"Left-Shift", a: ["Shift"], text: "Shift", width: 2.4 },
+        { type: "center", text: "Z", a: [90] },
+        { type: "center", text: "X", a: [88] },
+        { type: "center", text: "C", a: [67] },
+        { type: "center", text: "V", a: [86] },
+        { type: "center", text: "B", a: [66] },
+        { type: "center", text: "N", a: [78] },
+        { type: "center", text: "M", a: [77] },
+        { type: "dual", top: "<", bottom: ",", a: [188] },
+        { type: "dual", top: ">", bottom: ".", a: [190] },
+        { type: "dual", top: "?", bottom: "/", a: [191] },
         { type: "bottom-right", name:"Right-Shift", text: "Shift", width: 2.4 }
       ],
       [
@@ -79,7 +79,7 @@
         { type: "blank" },
         { type: "blank" },
         { type: "blank" },
-        { type: "space", width: 6.2, aliases: [32] },
+        { type: "space", width: 6.2, a: [32] },
         { type: "blank" },
         { type: "blank" },
         { type: "blank" },
@@ -90,7 +90,7 @@
   }
 
   const buildKeyboard = function(opts) {
-    let keys = {}, aliases = {}
+    let keys = {}, a = {}
     let $cb = $("<div class='cueboard js-cueboard'>")
     
     opts.keyboard.rows.forEach(function(row){
@@ -121,7 +121,7 @@
             keyObject.name = key.bottom
             keyObject.alias = key.top
 
-            keys[key.bottom] = aliases[key.top] = keyObject
+            keys[key.bottom] = a[key.top] = keyObject
             break
           case "bottom-left":
             $key.addClass("cueboard-bottom-left")
@@ -142,14 +142,14 @@
             $keyText.text(key.text)
             
             keyObject.name = key.name || key.text
-            keys[keyObject.name] = aliases[keyObject.name.toLowerCase()] = keyObject
+            keys[keyObject.name] = a[keyObject.name.toLowerCase()] = keyObject
             break
           case "space":
             $key.addClass("cueboard-space")
 
             keyObject.name = "Space"
             keyObject.alias = " "
-            keys["Space"] = aliases[" "] = keyObject
+            keys["Space"] = a[" "] = keyObject
             break
           case "blank":
           default:
@@ -162,9 +162,9 @@
           $key.attr("data-cueboard-keywidth", key.width)
         }
 
-        if (key.aliases) {
-          key.aliases.forEach(function(alias){
-            aliases[alias] = keyObject
+        if (key.a) {
+          key.a.forEach(function(alias){
+            a[alias] = keyObject
           })
         }
 
@@ -181,8 +181,8 @@
         return keys[key]
       }
 
-      if (aliases[key]) {
-        return aliases[key]
+      if (a[key]) {
+        return a[key]
       }
 
       return false

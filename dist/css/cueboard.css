@@ -47,20 +47,6 @@
   line-height: 20px;
   height: 50%; }
 
-.cueboard-keystate-inactive {
-  border: solid 3px #aaaaaa;
-  color: #aaaaaa; }
-
-.cueboard-keystate-active {
-  background: #6b3fa0;
-  color: #fafafa;
-  text-shadow: 1px 1px #333333; }
-
-.cueboard-keystate-next {
-  background: #cc3333;
-  color: white;
-  text-shadow: 1px 1px #333333; }
-
 [data-cueboard-keywidth='1.4'] {
   width: 67.2px; }
 
