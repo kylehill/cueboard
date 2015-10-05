@@ -110,7 +110,7 @@
           },
           $key: $key
         }
-        keyObject.changeState(opts.keyState)
+        keyObject.changeState(opts.initialKeyState)
         
         switch(key.type) {
           case "dual":
@@ -225,6 +225,7 @@
     }
 
     for (let keyState in opts.keyState) {
+      console.log(keyState, opts.keyState)
       cueboard.changeState(keyState, opts.keyState[keyState])
     }
 
