@@ -199,7 +199,8 @@
     opts = setOptions(opts, {
       keyboard: defaultKeyboardDefinition,
       selector: selector,
-      keyState: "inactive"
+      initialkeyState: "inactive",
+      keyState: {}
     })
 
     let instance = buildKeyboard(opts)
@@ -208,7 +209,7 @@
       next: false
     }
 
-    return {
+    let cueboard = {
       
       changeState: function(state, optionalKeyOrKeyArray) {
         if (optionalKeyOrKeyArray && optionalKeyOrKeyArray.constructor === Array) {
@@ -222,6 +223,12 @@
       }
 
     }
+
+    for (let keyState in opts.keyState) {
+      cueboard.changeState(keyState, opts.keyState[keyState])
+    }
+
+    return cueboard
 
   }
 
