@@ -149,7 +149,7 @@
 
             keyObject.name = "Space"
             keyObject.alias = " "
-            keys["Space"] = a[" "] = keyObject
+            keys["Space"] = a["space"] = a[" "] = keyObject
             break
           case "blank":
           default:
@@ -220,6 +220,11 @@
 
         let key = instance.keys(optionalKeyOrKeyArray)
         key && key.changeState(state)
+      },
+
+      convert: function(key) {
+        let k = instance.keys(key)
+        return k
       }
 
     }
