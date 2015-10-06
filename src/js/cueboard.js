@@ -225,7 +225,6 @@
     }
 
     for (let keyState in opts.keyState) {
-      console.log(keyState, opts.keyState)
       cueboard.changeState(keyState, opts.keyState[keyState])
     }
 
