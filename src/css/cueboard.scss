@@ -1,4 +1,4 @@
-$base_character_font_size: 16px;
+$base_character_font_size: 1em;
 $base_key_height: $base_character_font_size * 3;
 $base_key_width: $base_key_height;
 
@@ -11,6 +11,7 @@ $color_white: rgb(250, 250, 250);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 .cueboard-key {

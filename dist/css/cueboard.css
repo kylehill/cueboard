@@ -1,17 +1,18 @@
 .cueboard, .cueboard * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 16px; }
 
 .cueboard-key {
   color: #333333;
   display: inline-block;
   border: solid 3px #333333;
-  width: 48px;
+  width: 3em;
   text-align: center;
-  height: 48px;
+  height: 3em;
   vertical-align: top;
-  margin: 4.8px;
+  margin: 0.3em;
   border-radius: 5px;
   position: relative;
   font-family: sans-serif; }
@@ -25,36 +26,36 @@
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 100%;
-  font-size: 22.4px; }
+  font-size: 1.4em; }
 
 .cueboard-bottom-left .cueboard-keytext {
   position: absolute;
   bottom: 5px;
   left: 5px;
-  font-size: 12.8px; }
+  font-size: 0.8em; }
 
 .cueboard-bottom-right .cueboard-keytext {
   position: absolute;
   bottom: 5px;
   right: 5px;
-  font-size: 12.8px; }
+  font-size: 0.8em; }
 
 .cueboard-dual .cueboard-keytext {
   height: 100%; }
 
 .cueboard-key-top, .cueboard-key-bottom {
-  font-size: 16.8px;
-  line-height: 20px;
+  font-size: 1.05em;
+  line-height: 1.25em;
   height: 50%; }
 
 [data-cueboard-keywidth='1.4'] {
-  width: 67.2px; }
+  width: 4.2em; }
 
 [data-cueboard-keywidth='1.8'] {
-  width: 86.4px; }
+  width: 5.4em; }
 
 [data-cueboard-keywidth='2.4'] {
-  width: 115.2px; }
+  width: 7.2em; }
 
 [data-cueboard-keywidth='6.2'] {
-  width: 297.6px; }
+  width: 18.6em; }
