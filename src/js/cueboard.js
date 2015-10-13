@@ -11,6 +11,27 @@
     return optionsObject
   }
 
+  const forEach = Array.prototype.forEach || function(array, iterator) {
+    for (var i = 0; i < array.length; i++) {
+      iterator(array[i])
+    }
+  }
+
+  const map = Array.prototype.map || function(array, iterator) {
+    let out = []
+    for (var i = 0; i < array.length; i++) {
+      out.push(iterator(array[i]))
+    }
+    return out
+  }
+
+  const reduce = Array.prototype.reduce || function(array, iterator, memory) {
+    for (var i = 0; i < array.length; i++) {
+      memory = iterator(memory, array[i])
+    }
+    return memory
+  }
+
   const defaultKeyboardDefinition = {
     rows: [ 
       [
@@ -93,11 +114,11 @@
     let keys = {}, a = {}
     let $cb = $("<div class='cueboard js-cueboard'>")
     
-    opts.keyboard.rows.forEach(function(row){
+    forEach(opts.keyboard.rows, function(row){
       let $row = $("<div class='cueboard-row js-cueboard-row'>")
       $cb.append($row)
 
-      row.forEach(function(key){
+      forEach(row, function(key){
         let $key = $("<div class='cueboard-key js-cueboard-key'>")
         let $keyText = $("<div class='cueboard-keytext'>")
 
@@ -163,7 +184,7 @@
         }
 
         if (key.a) {
-          key.a.forEach(function(alias){
+          forEach(key.a, function(alias){
             a[alias] = keyObject
           })
         }
@@ -213,7 +234,7 @@
       
       changeState: function(state, optionalKeyOrKeyArray) {
         if (optionalKeyOrKeyArray && optionalKeyOrKeyArray.constructor === Array) {
-          return optionalKeyOrKeyArray.forEach(function(key){
+          return forEach(optionalKeyOrKeyArray, function(key){
             this.changeState(state, key)
           }, this)
         }
