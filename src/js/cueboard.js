@@ -11,13 +11,13 @@
     return optionsObject
   }
 
-  const forEach = Array.prototype.forEach || function(array, iterator) {
+  const forEach = function(array, iterator) {
     for (var i = 0; i < array.length; i++) {
       iterator(array[i])
     }
   }
 
-  const map = Array.prototype.map || function(array, iterator) {
+  const map = function(array, iterator) {
     let out = []
     for (var i = 0; i < array.length; i++) {
       out.push(iterator(array[i]))
@@ -25,7 +25,7 @@
     return out
   }
 
-  const reduce = Array.prototype.reduce || function(array, iterator, memory) {
+  const reduce = function(array, iterator, memory) {
     for (var i = 0; i < array.length; i++) {
       memory = iterator(memory, array[i])
     }
