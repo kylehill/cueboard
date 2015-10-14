@@ -12,7 +12,7 @@
   ],
   "main": [
     "dist/js/cueboard.js",
-    "dist/css/cueboard.scss",
+    "dist/css/cueboard.scss"
   ],
   "keywords": [
     "keyboard",
