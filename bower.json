@@ -1,7 +1,7 @@
 {
   "name": "cueboard",
   "description": "A library to place a programmatic, visual keyboard onto a page",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "authors": [
     "Kyle Hill <kylehill@gmail.com>"
   ],
