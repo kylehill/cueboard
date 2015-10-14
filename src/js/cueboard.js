@@ -11,25 +11,10 @@
     return optionsObject
   }
 
-  const forEach = function(array, iterator) {
+  const forEach = function(array, iterator, context) {
     for (var i = 0; i < array.length; i++) {
-      iterator(array[i])
+      iterator.call(context, array[i])
     }
-  }
-
-  const map = function(array, iterator) {
-    let out = []
-    for (var i = 0; i < array.length; i++) {
-      out.push(iterator(array[i]))
-    }
-    return out
-  }
-
-  const reduce = function(array, iterator, memory) {
-    for (var i = 0; i < array.length; i++) {
-      memory = iterator(memory, array[i])
-    }
-    return memory
   }
 
   const defaultKeyboardDefinition = {
